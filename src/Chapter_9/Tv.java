@@ -31,7 +31,7 @@ public class Tv {
             channel++;
     }
 
-    public void channelDown() {
+    public int channelDown() {
         if (on && channel > 1)
             channel __;
     }
