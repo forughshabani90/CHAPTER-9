@@ -1,4 +1,4 @@
-package Chapter_9;
+package listing;
 
 public class Tv {
     int channel = 1;
@@ -21,9 +21,10 @@ public class Tv {
         channel = newchannel;
     }
 
-    public int setVolum(int newvolum) {
+    public void setVolum(int newvolum) {
         if (on && newvolum >= 1 && newvolum <= 7)
             volumLevel = newvolum;
+
     }
 
     public void channelUp() {
@@ -31,9 +32,9 @@ public class Tv {
             channel++;
     }
 
-    public int channelDown() {
+    public void channelDown() {
         if (on && channel > 1)
-            channel __;
+            channel --;
     }
 
     public void volumUP() {
@@ -43,6 +44,6 @@ public class Tv {
 
     public void volumDown() {
         if (on && volumLevel > 1)
-            volumLevel __;
+            volumLevel --;
     }
 }
