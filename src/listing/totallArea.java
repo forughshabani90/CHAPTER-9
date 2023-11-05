@@ -1,6 +1,8 @@
 package listing;
 
 public class totallArea {
+    public double radius =0 ;
+
     public static void main(String[] args) {
         Circle[] circleArray;
         circleArray = createCircleArray();
@@ -15,9 +17,9 @@ public class totallArea {
         return circleArray;
     }
     public static void printCircleArray(Circle[] circleArray) {
-        System.out.printf("%–30s%–15s\n", "Radius", "Area");
+        System.out.printf( "Radius", "Area");
         for (int i = 0; i < circleArray.length; i++) {
-            System.out.printf("%–30f%–15f\n", circleArray[i].getRdius() , circleArray[i].getArea());
+            System.out.printf( circleArray[i].getradius() , circleArray[i].getArea());
         }
         System.out.println("--------");
         System.out.printf("%–30s%–15f\n", "The total area of circles is", sum(circleArray));
@@ -32,4 +34,5 @@ public class totallArea {
 
         return sum;
     }
+
 }

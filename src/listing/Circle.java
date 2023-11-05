@@ -18,4 +18,7 @@ public class Circle {
    void setRadius(double newradius) {
      radius = newradius;
     }
+
+    public String getradius() {
+    }
 }
