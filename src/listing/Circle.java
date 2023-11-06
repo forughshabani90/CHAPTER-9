@@ -19,6 +19,7 @@ public class Circle {
      radius = newradius;
     }
 
-    public String getradius() {
+    public double getradius() {
+         return radius;
     }
 }
